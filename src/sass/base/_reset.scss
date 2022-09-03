@@ -1,0 +1,47 @@
+body {
+  background-color: var(--background-green-color);
+  font-size: var(--main-font-size);
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--main-font-size-12px);
+  letter-spacing: 0.04em;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  display: block;
+  resize: none;
+}
+
+.button {
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+}

@@ -1,14 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Ice cream</title>
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick start -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!--     END        -->
+
     <link rel="stylesheet" href="./sass/index.scss" />
+
+    <!-- Slick jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- END -->
+
+    <!-- slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- END -->
+
+    <!-- Slick -->
+    <script type="module" src="./js/slick.js"></script>
+    <!-- END -->
+
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/01-header.html"></include>
+    <main class="main">
+      <include src="./partials/02-hero.html"></include>
+      <include src="./partials/03-products.html"></include>
+      <include src="./partials/04-about.html"></include>
+      <include src="./partials/05-advantages.html"></include>
+      <include src="./partials/06-gallery.html"></include>
+      <include src="./partials/07-customer-reviews.html"></include>
+      <include src="./partials/08-contacts.html"></include>
+    </main>
+    <include src="./partials/09-footer.html"></include>
   </body>
 </html>
