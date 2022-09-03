@@ -1,0 +1,158 @@
+@media screen and (max-width: 767px) {
+    .hero__box_two,
+    .hero__box_three {
+      display: none;
+    }
+  
+    .hero__lost-word {
+      @include font(32px, 400, 34px);
+    }
+  
+    .hero__container {
+      min-height: 500px;
+    }
+  }
+  
+  .hero__title {
+    font-family: Seymour One;
+    text-transform: uppercase;
+    @include font(26px, 400, 32px);
+    margin-bottom: 32px;
+    color: var(--white-color-text);
+  }
+  
+  .hero__button {
+    border: 2px solid var(--hero-link-hero-color);
+    @include font(8px, 400, 9px);
+    color: var(--secondary-title-color);
+    border-radius: 8px;
+    margin-right: 16px;
+    background: transparent;
+    height: 24px;
+    width: 62px;
+  }
+  
+  .hero__link {
+    @include font(8px, 600, 10px);
+    color: var(--hero-link-hero-color);
+    text-decoration: underline;
+  }
+  
+  .hero__container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero__picture-one {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .hero__picture-two {
+    position: absolute;
+    width: 100%;
+    transform: translateY(17%);
+    bottom: 0;
+  }
+  
+  .hero__picture-two {
+  text-align: center;
+  }
+  
+  .hero__box-plate {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero__box-plate {
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+  
+    .hero__lost-word {
+      @include font(18px, 400, 22px);
+    }
+  
+  
+  .hero__title {
+    @include font(13px, 400, 16px);
+    margin-bottom: 20px;
+    max-width: 150px;
+  }
+  
+  .hero__how {
+    @include font(8px, 400, 9px);
+    max-width: 51px;
+    text-align: right;
+  }
+  
+  .hero__how-first {
+    @include font(28px, 900, 34px);
+    color: var(--secondary-title-color);
+  }
+  
+  .hero__description {
+    @include font(12px, 400, 16px);
+    max-width: 151px;
+    text-align: left;
+  }
+  
+  .hero__icon {
+    fill: var(--primary-text-color);
+  }
+  
+  
+  .hero__link {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  
+  .hero__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hero__box_one {
+    margin-bottom: 56px;
+  }
+  
+  
+  .hero__box-plate {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero__description-wrapper {
+    margin-left: 16px;
+  }
+  
+  
+  .hero__picture-two {
+    max-width: 270px;
+    right: 80px;
+  }
+  
+  
+  }
+  
+  
+  
+  @media screen and (min-width: 1200px) {
+  
+  
+  
+    .hero__picture-two {
+      
+  
+    }
+  
+  
+  
+  
+  
+  }
