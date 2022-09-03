@@ -1,0 +1,213 @@
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+// Tablet
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 53px;
+    padding-bottom: 204px;
+  }
+}
+
+.advantages-list__item::before {
+  display: inline-block;
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-color: var(--background-button-static);
+  background-repeat: no-repeat;
+}
+
+.advantages-list__item::before {
+  margin-bottom: 16px;
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .advantages-list__item::before {
+    margin-bottom: 32px;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1200px) {
+  .advantages-list__item::before {
+    margin-bottom: 40px;
+  }
+}
+
+// Mobile bottom
+@media screen and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.cow::before {
+  background-image: url('../images/advantages/mobile/cow-icon.png');
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .cow::before {
+    background-image: url('../images/advantages/mobile/cow-icon@2x.png');
+    background-size: 75% auto;
+  }
+}
+
+.weight::before {
+  background-image: url('../images/advantages/mobile/weight-icon.png');
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .weight::before {
+    background-image: url('../images/advantages/mobile/weight-icon@2x.png');
+    background-size: 75% auto;
+  }
+}
+
+.ice-cream::before {
+  background-image: url('../images/advantages/mobile/ice-cream-icon.png');
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .ice-cream::before {
+    background-image: url('../images/advantages/mobile/ice-cream-icon@2x.png');
+    background-size: 75% auto;
+  }
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+// Tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list {
+    display: flex;
+    column-gap: 80px;
+    margin-right: 56px;
+    margin-left: 56px;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: flex;
+    column-gap: 32px;
+  }
+}
+
+.advantages-list__amount {
+  @include font(36px, 700, 42px);
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 18px;
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .advantages-list__amount {
+    @include font(48px, 700, 59px);
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color-text);
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__amount {
+    @include font(58px, 700, 71px);
+    color: var(--primary-text-color);
+  }
+}
+
+.advantages-list__description {
+  @include font(12px, 700, 20px);
+}
+
+// Tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list__description {
+    @include font(14px, 400, 24px);
+    width: 152px;
+    color: var(--white-color-text);
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__description {
+    @include font(16px, 400, 28px);
+    color: var(--primary-text-color);
+  }
+}
+
+//  .banner {
+//    min-height: 600px;
+//    background-image: url('../images/car-mobile.jpg');
+//    background-position: center top;
+//    background-size: 960px 576px;
+//    background-repeat: no-repeat;
+//  }
+
+//  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//    screen and (min-resolution: 192dpi) and (max-width: 767px),
+//    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//    .banner {
+//      background-image: url('../images/car-mobile@2x.jpg');
+//    }
+//  }
+
+//  @media screen and (min-width: 768px) {
+//   .banner {
+//     background-image: url('../images/car-tablet.jpg');
+//   }
+// }
+
+//  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//    screen and (min-resolution: 192dpi) and (min-width: 768px),
+//    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//    .banner {
+//      background-image: url('../images/car-tablet@2x.jpg');
+//    }
+//  }
+
+//  @media screen and (min-width: 1200px) {
+//    .banner {
+//     background-image: url('../images/car-desktop.jpg');
+//    }
+//  }
+
+//  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//    .banner {
+//      background-image: url('../images/car-desktop@2x.jpg');
+//    }
+//  }
+
+//  .team-list {
+//    display: flex;
+//    justify-content: center;
+//    column-gap: 30px;
+//  }
+
+//  .section {
+//    padding: 50px 0;
+//  }
