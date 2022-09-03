@@ -65,7 +65,24 @@
     display: none;
   }
   
+  @media screen and (max-width: 767px) {
+     .hero__box_one {
+    padding-top: 50px;
+  }
+  }
+
+  .hero__box-bg {
+    height: 100%;
+  }
+ 
+  
   @media screen and (min-width: 768px) {
+
+    .hero__box-wrapper {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
     .hero__box-plate {
       display: block;
       position: relative;
@@ -78,13 +95,13 @@
   
   
   .hero__title {
-    @include font(13px, 400, 16px);
+    @include font(18px, 400, 22px);
     margin-bottom: 20px;
-    max-width: 150px;
+    max-width: 190px;
   }
   
   .hero__how {
-    @include font(8px, 400, 9px);
+    @include font(16px, 400, 13px);
     max-width: 51px;
     text-align: right;
   }
