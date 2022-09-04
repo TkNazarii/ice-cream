@@ -48,3 +48,8 @@
   @include font(12px, 600, 15px);
   color: var(--secondary-title-color);
 }
+.modal-locations.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
