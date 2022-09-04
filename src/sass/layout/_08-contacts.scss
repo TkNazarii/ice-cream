@@ -1,8 +1,18 @@
+.container--contacts {
+  position: relative;
+}
+.container-wrapper {
+  position: absolute;
+  top: -350px;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
 .branch {
   background-color: var(--primary-text-color);
   border-radius: 24px;
   padding: 40px 32px;
-  font-style: normal;
   display: block;
 }
 .branch:not(:last-child) {
@@ -13,9 +23,8 @@
 }
 .branch__type {
   display: block;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
+  @include font(12px, 500, 16px);
+
   color: var(--subtitle-color);
 }
 
@@ -29,23 +38,20 @@
   margin-bottom: 20px;
 }
 .contacts-list__city {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22px;
+  @include font(12px, 500, 22px);
+
   color: var(--secondary-title-color);
   margin-bottom: 8px;
 }
 .contacts-list__adress-link {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22px;
+  @include font(12px, 500, 22px);
+
   color: var(--contact-color-text);
 }
 
 .schedule__item {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22px;
+  @include font(12px, 500, 22px);
+
   color: var(--background-button-disable);
 }
 .schedule__item:not(:last-child) {
@@ -56,9 +62,7 @@
 }
 .contacts-list__link {
   color: var(--contact-color-text);
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
+  @include font(12px, 500, 18px);
 }
 .contacts-list__item {
   display: block;
@@ -97,9 +101,8 @@
   fill: var(--secondary-title-color);
 }
 .btn-in-contacts__link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19.5px;
+  @include font(16px, 700, 19.5px);
+
   align-items: center;
   justify-content: center;
   color: var(--secondary-title-color);
@@ -112,7 +115,6 @@
   padding: 13px 33px;
   border: 2px solid var(--hero-link-hero-color);
   background-color: transparent;
-  margin-bottom: 32px;
 }
 .btn-in-contacts--franchise:hover {
   border: 2px solid var(--background-button-hover);
@@ -125,6 +127,9 @@
   fill: var(--primary-text-color);
 }
 @media screen and (min-width: 768px) {
+  .container-wrapper {
+    top: -330px;
+  }
   .branches {
     display: flex;
     justify-content: space-between;
@@ -135,8 +140,8 @@
     margin-bottom: 0;
   }
   .branch {
-    width: 224px;
     padding: 40px 24px;
+    width: 224px;
   }
   .branch__type {
     font-size: 16px;
@@ -146,24 +151,25 @@
     margin-bottom: 32px;
   }
   .contacts-list__city {
-    line-height: 26px;
-    font-size: 14px;
+    @include font(14px, 500, 26px);
+
     margin-bottom: 12px;
   }
   .contacts-list__adress-link {
-    line-height: 26px;
-    font-size: 14px;
+    @include font(14px, 500, 26px);
   }
   .schedule__item {
-    font-size: 14px;
-    line-height: 26px;
+    @include font(14px, 500, 26px);
   }
   .schedule__item:not(:last-child) {
     margin-bottom: 12px;
   }
   .contacts-list__link {
-    font-size: 14px;
-    line-height: 26px;
+    @include font(14px, 500, 26px);
+  }
+  .contacts-list__item:not(:last-child)::after {
+    margin-bottom: 32px;
+    margin-top: 32px;
   }
   .btn-in-contacts {
     margin: 0;
@@ -172,13 +178,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
   }
   .btn-in-contacts--locations {
     margin-right: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .container-wrapper {
+    top: -96px;
+    padding-bottom: 120px;
+  }
   .branch {
     width: 368px;
     padding: 40px 40px;
@@ -188,26 +197,21 @@
     margin-bottom: 64px;
   }
   .contacts-list__city {
-    line-height: 30px;
-    font-size: 16px;
+    @include font(16px, 500, 29px);
+
     margin-bottom: 8px;
   }
   .contacts-list__adress-link {
-    line-height: 30px;
-    font-size: 16px;
+    @include font(16px, 500, 29px);
   }
   .schedule__item {
-    font-size: 16px;
-    line-height: 30px;
+    @include font(16px, 500, 29px);
   }
   .contacts-list__link {
-    font-size: 16px;
-    line-height: 30px;
+    @include font(16px, 500, 29px);
   }
   .btn-in-contacts__link {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
+    @include font(14px, 600, 18px);
   }
   .btn-in-contacts--locations {
     margin-right: 18px;
@@ -215,8 +219,5 @@
   }
   .btn-in-contacts--franchise {
     padding: 12px 36px;
-  }
-  .btn-wrapper {
-    margin-bottom: 120px;
   }
 }
