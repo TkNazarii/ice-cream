@@ -1,0 +1,174 @@
+.customer-reviews {
+  // padding-top: 452px;
+  // padding-bottom: 207px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // Mobile
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-image: url(../images/background/mobile/background-galery.jpg);
+  }
+
+  //   Tablet
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/tablet/background-gallery.jpg);
+  }
+
+  //   Desktop
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background/desktop/background-gallery.jpg);
+  }
+}
+
+// Mobile 2x
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .customer-reviews {
+    background-image: url(..//images/background/mobile/background-gallery@2x.jpg);
+  }
+}
+
+// Tablet 2x
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .customer-reviews {
+    background-image: url(../images/background/tablet/background-gallery@2x.jpg);
+  }
+}
+
+//   Desktop 2x
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .customer-reviews {
+    background-image: url(../images/background/desktop/background-gallery@2x.jpg);
+  }
+}
+
+.wrapper-customer-reviews {
+  @media screen and (min-width: 1200px) {
+    padding-left: 116px;
+    padding-right: 116px;
+  }
+}
+
+.one-time {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.customer-photo {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+  }
+}
+
+.reviews {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+  background-color: var(--background-green-color);
+
+  border-radius: 10px;
+
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    padding: 34px 39px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 31px;
+
+    text-align: center;
+
+    color: #fcfcfc;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 29px 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #fcfcfc;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 39px 109px 47px 109px;
+  }
+}
+
+.customer-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+
+    color: var(--secondary-title-color);
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 12px;
+
+  color: var(--background-green-color);
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+
+  color: #d9d9d9;
+  opacity: 1;
+}
