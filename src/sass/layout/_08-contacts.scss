@@ -91,15 +91,28 @@
   margin-right: auto;
   margin-left: auto;
 }
-.btn-in-contacts--locations:hover {
+.btn-in-contacts--locations:hover,
+.btn-in-contacts--locations:focus {
   background-color: var(--background-button-hover);
   border: 2px solid var(--background-button-hover);
+}
+.btn-in-contacts--locations:focus .btn-in-contacts__link--locations {
+  color: var(--primary-text-color);
 }
 .btn-in-contacts:hover .btn-in-contacts__link--locations {
   color: var(--secondary-title-color);
 }
+.btn-in-contacts__link--locations {
+  transition: color var(--timing-duration) var(--timing-function);
+}
 .btn-in-contacts:hover .btn-arrow {
   fill: var(--secondary-title-color);
+}
+.btn-in-contacts:focus .btn-arrow {
+  fill: var(--primary-text-color);
+}
+.btn-arrow {
+  transition: fill var(--timing-duration) var(--timing-function);
 }
 .btn-in-contacts__link {
   @include font(16px, 700, 19.5px);
@@ -109,24 +122,35 @@
   color: var(--secondary-title-color);
   margin-right: 8px;
 }
+
 .btn-in-contacts--locations {
   margin-bottom: 8px;
+  transition: background-color var(--timing-duration) var(--timing-function),
+    border var(--timing-duration) var(--timing-function);
 }
 .btn-in-contacts--franchise {
   padding: 13px 33px;
   border: 2px solid var(--hero-link-hero-color);
   background-color: transparent;
+  transition: border var(--timing-duration) var(--timing-function);
 }
-.btn-in-contacts--franchise:hover {
+.btn-in-contacts--franchise:hover,
+.btn-in-contacts--franchise:focus {
   border: 2px solid var(--background-button-hover);
 }
-
-.btn-in-contacts__link--franchise {
+.btn-in-contacts--franchise:focus .btn-in-contacts__link--franchise {
   color: var(--primary-text-color);
 }
-.btn-arrow--franchise {
+.btn-in-contacts__link--franchise {
+  transition: color var(--timing-duration) var(--timing-function);
+}
+.btn-in-contacts--franchise:focus .btn-arrow--franchise {
   fill: var(--primary-text-color);
 }
+.btn-arrow--franchise {
+  transition: fill var(--timing-duration) var(--timing-function);
+}
+
 @media screen and (min-width: 768px) {
   .container-wrapper {
     top: -330px;
