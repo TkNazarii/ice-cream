@@ -13,6 +13,8 @@
   }
 }
 
+
+
 .hero__title {
   font-family: Seymour One;
   text-transform: uppercase;
@@ -47,6 +49,7 @@
   width: 100%;
   bottom: 0;
   left: 0;
+
 }
 
 .hero__picture-two {
@@ -157,7 +160,7 @@
   width: 100%;
 
   animation-name: spin;
-  animation-duration: 40s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -200,3 +203,22 @@
     @include font(14px, 600, 17px);
   }
 }
+
+
+
+.hero__picture-one {
+    animation-name: flesh;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes flesh {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
