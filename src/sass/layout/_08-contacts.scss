@@ -1,5 +1,6 @@
 .container--contacts {
   position: relative;
+  height: 1150px;
 }
 .container-wrapper {
   position: absolute;
@@ -15,6 +16,8 @@
   border-radius: 24px;
   padding: 40px 32px;
   display: block;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 .branch:not(:last-child) {
   margin-bottom: 20px;
@@ -62,7 +65,7 @@
   color: var(--secondary-title-color);
 }
 .contacts-list__link {
-  color: var(--contact-color-text);
+  color: var(--subtitle-color);
   @include font(12px, 500, 18px);
 }
 .contacts-list__item {
@@ -152,6 +155,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container--contacts {
+    height: 380px;
+  }
   .container-wrapper {
     top: -330px;
   }
@@ -209,6 +215,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .container--contacts {
+    height: 650px;
+  }
   .container-wrapper {
     top: -96px;
     padding-bottom: 120px;
