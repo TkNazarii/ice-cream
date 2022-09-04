@@ -242,15 +242,23 @@
 }
 
 .products-icon {
+  padding: 0;
   background-color: transparent;
   border: none;
   display: block;
   margin: auto;
   margin-bottom: 0px;
-  transition: background-color var(--timing-duration)
-    cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &.icon-arrow-right {
-    fill: var(--subtitle-color);
-  }
+.icon-arrow-right {
+  width: 40px;
+  border-color: 2px solid var(--subtitle-color);
+  cursor: pointer;
+  transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    width var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-arrow-right:hover,
+.icon-arrow-right:focus {
+  border-color: 3px solid var(--subtitle-color);
+  width: 50px;
 }
