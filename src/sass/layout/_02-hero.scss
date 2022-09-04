@@ -13,8 +13,6 @@
   }
 }
 
-
-
 .hero__title {
   font-family: Seymour One;
   text-transform: uppercase;
@@ -49,7 +47,6 @@
   width: 100%;
   bottom: 0;
   left: 0;
-
 }
 
 .hero__picture-two {
@@ -176,6 +173,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero__title,
+  .hero__lost-word {
+    @include font(38px, 400, 47px);
+    margin-bottom: 28px;
+    max-width: 367px;
+  }
+
   .hero__box-wrapper {
     padding-top: 20px;
     padding-bottom: 60px;
@@ -204,21 +208,18 @@
   }
 }
 
-
-
 .hero__picture-one {
-    animation-name: flesh;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-   
+  animation-name: flesh;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 @keyframes flesh {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
