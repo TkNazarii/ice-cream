@@ -157,7 +157,7 @@
   width: 100%;
 
   animation-name: spin;
-  animation-duration: 40s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -173,6 +173,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero__title,
+  .hero__lost-word {
+    @include font(38px, 400, 47px);
+    margin-bottom: 28px;
+    max-width: 367px;
+  }
+
   .hero__box-wrapper {
     padding-top: 20px;
     padding-bottom: 60px;
@@ -198,5 +205,21 @@
 
   .hero__link {
     @include font(14px, 600, 17px);
+  }
+}
+
+.hero__picture-one {
+  animation-name: flesh;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes flesh {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
