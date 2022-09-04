@@ -85,9 +85,6 @@
   margin-right: auto;
 
   margin-bottom: 30px;
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-  }
 }
 
 .reviews {
@@ -110,14 +107,12 @@
     padding: 34px 39px;
 
     @include font(12px, 400, 31px);
-    text-align: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 29px 80px;
 
     @include font(14px, 500, 26px);
-    text-align: center;
     letter-spacing: 0.04em;
   }
 
@@ -129,6 +124,7 @@
 .customer-name {
   font-family: 'Montserrat';
   font-style: normal;
+
   @include font(16px, 500, 30px);
   text-align: center;
   color: var(--secondary-title-color);
