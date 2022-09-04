@@ -1,6 +1,6 @@
 .customer-reviews {
-  // padding-top: 452px;
-  // padding-bottom: 207px;
+  padding-top: 452px;
+  padding-bottom: 207px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -10,12 +10,16 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: url(../images/background/mobile/background-galery.jpg);
+    padding-top: 205px;
+    padding-bottom: 400px;
   }
 
   //   Tablet
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/tablet/background-gallery.jpg);
+    padding-top: 223px;
+    padding-bottom: 383px;
   }
 
   //   Desktop
