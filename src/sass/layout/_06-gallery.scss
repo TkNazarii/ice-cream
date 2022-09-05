@@ -1,6 +1,85 @@
-.gallery {
-    padding-bottom: 80px;
+
+@media screen and (max-width:767px) {
+    .gallery-foto {
+        padding-bottom: 36px ;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -25px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .gallery-foto {
+      //   padding-bottom: 128px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: - 98px;
+    }
+}
+
+.gallery-div {
     display: flex;
+    position: relative;
     justify-content: center;
+}
+
+
+
+img {
     border-radius: 24px;
+}
+
+.gallery {
+    border-radius: 24px;
+
+    background-attachment: fixed;
+
+  
+    // width:  100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+        background-image: url(../images/background/mobile/background-galery.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/background/tablet/background-gallery.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/background/desktop/background-gallery.jpg);
+    }
+}
+
+@media screen and (min-device-pixel: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+
+
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .gallery {
+        background-image: url(../images/background/mobile/background-gallery@2x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel: 2) and (max-width: 768px),
+screen and (min-resolution: 192dpi) and (max-width: 768px),
+screen and (min-resolution: 2dppx) and (max-width: 768px) {
+    .gallery {
+        background-image: url(../images/background/tablet/background-gallery@2x.jpg);
+    }
+}
+
+
+@media screen and (min-device-pixel: 2) and (max-width: 1200px),
+screen and (min-resolution: 192dpi) and (max-width: 1200px),
+screen and (min-resolution: 2dppx) and (max-width: 1200px) {
+    .gallery {
+        background-image: url(../images/background/desktop/background-gallery@2x.jpg);
+    }
 }

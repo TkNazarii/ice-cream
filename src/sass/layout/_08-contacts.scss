@@ -1,5 +1,6 @@
 .container--contacts {
   position: relative;
+  height: 1150px;
 }
 .container-wrapper {
   position: absolute;
@@ -15,6 +16,8 @@
   border-radius: 24px;
   padding: 40px 32px;
   display: block;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 .branch:not(:last-child) {
   margin-bottom: 20px;
@@ -62,7 +65,7 @@
   color: var(--secondary-title-color);
 }
 .contacts-list__link {
-  color: var(--contact-color-text);
+  color: var(--subtitle-color);
   @include font(12px, 500, 18px);
 }
 .contacts-list__item {
@@ -81,7 +84,7 @@
 }
 .btn-in-contacts {
   display: flex;
-  padding: 13px 15.5px;
+  padding: 12px 34px;
 
   align-items: center;
   justify-content: center;
@@ -91,43 +94,71 @@
   margin-right: auto;
   margin-left: auto;
 }
-.btn-in-contacts--locations:hover {
+.btn-in-contacts--locations:hover,
+.btn-in-contacts--locations:focus {
   background-color: var(--background-button-hover);
   border: 2px solid var(--background-button-hover);
+}
+.btn-in-contacts--locations:focus .btn-in-contacts__link--locations {
+  color: var(--primary-text-color);
 }
 .btn-in-contacts:hover .btn-in-contacts__link--locations {
   color: var(--secondary-title-color);
 }
+.btn-in-contacts__link--locations {
+  transition: color var(--timing-duration) var(--timing-function);
+}
 .btn-in-contacts:hover .btn-arrow {
   fill: var(--secondary-title-color);
 }
+.btn-in-contacts:focus .btn-arrow {
+  fill: var(--primary-text-color);
+}
+.btn-arrow {
+  transition: fill var(--timing-duration) var(--timing-function);
+}
 .btn-in-contacts__link {
-  @include font(16px, 700, 19.5px);
+  @include font(14px, 600, 18px);
 
   align-items: center;
   justify-content: center;
   color: var(--secondary-title-color);
-  margin-right: 8px;
-}
-.btn-in-contacts--locations {
-  margin-bottom: 8px;
-}
-.btn-in-contacts--franchise {
-  padding: 13px 33px;
-  border: 2px solid var(--hero-link-hero-color);
-  background-color: transparent;
-}
-.btn-in-contacts--franchise:hover {
-  border: 2px solid var(--background-button-hover);
+  margin-right: 6px;
 }
 
-.btn-in-contacts__link--franchise {
+.btn-in-contacts--locations {
+  margin-bottom: 16px;
+  transition: background-color var(--timing-duration) var(--timing-function),
+    border var(--timing-duration) var(--timing-function);
+}
+.btn-in-contacts--franchise {
+  padding: 12px 47px;
+  border: 2px solid var(--hero-link-hero-color);
+  background-color: transparent;
+  transition: border var(--timing-duration) var(--timing-function);
+}
+.btn-in-contacts--franchise:hover,
+.btn-in-contacts--franchise:focus {
+  border: 2px solid var(--background-button-hover);
+}
+.btn-in-contacts--franchise:focus .btn-in-contacts__link--franchise {
   color: var(--primary-text-color);
 }
-.btn-arrow--franchise {
+.btn-in-contacts__link--franchise {
+  margin-right: 10px;
+  transition: color var(--timing-duration) var(--timing-function);
+}
+.btn-in-contacts--franchise:focus .btn-arrow--franchise {
   fill: var(--primary-text-color);
 }
+.btn-arrow--franchise {
+  transition: fill var(--timing-duration) var(--timing-function);
+}
+
 @media screen and (min-width: 768px) {
+  .container--contacts {
+    height: 380px;
+  }
   .container-wrapper {
     top: -330px;
   }
@@ -185,6 +216,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .container--contacts {
+    height: 650px;
+  }
   .container-wrapper {
     top: -96px;
     padding-bottom: 120px;
