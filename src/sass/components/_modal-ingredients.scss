@@ -1,20 +1,17 @@
-.ingredients {
+.modal-ingredients {
   position: fixed;
-  width: 280px;
-  height: 990px;
-  top: 50%;
-  left: 50%;
-  padding: 0px;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  max-height: 990px;
+  top: 0;
+  left: 0;
   z-index: 100;
-  opacity: 0;
   background-color: var(--primary-text-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
-
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms var(--timing-function),
-    visibility 250ms var(--timing-function);
+  transition: opacity var(--timing-duration) var(--timing-function),
+    visibility var(--timing-duration) var(--timing-function);
 
   &.is-open {
     opacity: 1;
@@ -22,25 +19,77 @@
     pointer-events: auto;
   }
 }
-.modal-ingredients {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.modal-ingredients-container {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 28px 20px;
 }
-.ingredients-close-btn {
+
+.modal-ingredients__close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  justify-content: space-between;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 28px;
+  right: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
-  //   line-height: 0;
+  line-height: 0;
+  transition: fill var(--timing-duration) var(--timing-function);
+}
+
+.modal-ingredients__icon-close {
+  width: 20px;
+  height: 20px;
+}
+
+.ingredients-product__list {
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.ingredients-product {
+  font-family: 'Seymour One';
+  @include font(20px, 400, 28px);
+  color: var(--subtitle-color);
+}
+
+.ingredients-product__img {
+  margin: auto;
+  margin-top: 22px;
+  //   margin-bottom: 24px;
+  padding: 0;
+}
+
+.ingredients-grams {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+
+.ingredients-box {
+  position: relative;
+  //   position: absolute;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  @include font(10px, 400, 12px);
+  color: var(--subtitle-color);
+}
+
+.ingredients-box__title {
+  margin-top: 52px;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  @include font(10px, 400, 12px);
+  color: var(--subtitle-color);
 }
