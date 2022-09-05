@@ -1,0 +1,79 @@
+.modal-franchise {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 20px;
+  width: 280px;
+  height: 674px;
+  background-color: var(--white-color-text);
+  border: 2px solid var(--hero-link-hero-color);
+  border-radius: 10px;
+  padding: 28px;
+}
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--hero-link-hero-color);
+  }
+}
+.modal-franchise__introduction {
+  font-family: 'Seymour One', sans-serif;
+  @include font(15px, 400, 24px);
+  color: var(--secondary-title-color);
+  text-align: start;
+  margin-bottom: 20px;
+}
+.modal-franchise__text {
+  @include font(14px, 400, 19px);
+  color: var(--secondary-title-color);
+  margin-bottom: 24px;
+}
+.modal-franchise__input {
+  display: block;
+  border: 2px solid var(--background-green-color);
+  border-radius: 10px;
+  height: 32px;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: rgba(248, 210, 78, 0.1);
+}
+.modal-franchise__label {
+  display: block;
+}
+.modal-franchise__label:not(:last-child) {
+  margin-bottom: 12px;
+}
+.modal-franchise__comment {
+  display: block;
+  border: 2px solid var(--background-green-color);
+  border-radius: 10px;
+  height: 64px;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 24px;
+  background-color: rgba(248, 210, 78, 0.1);
+}
+.modal-franchise__btn {
+  @include font(12px, 600, 15px);
+  padding: 7px 47px;
+  display: block;
+
+  background-color: var(--hero-link-hero-color);
+  border: 2px solid var(--hero-link-hero-color);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-franchise.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
