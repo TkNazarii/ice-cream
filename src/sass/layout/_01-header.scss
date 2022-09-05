@@ -16,10 +16,6 @@ ul {
   display: none;
 }
 
-.header__button {
-  display: none;
-}
-
 .header__container {
   display: flex;
   align-items: center;
@@ -38,13 +34,15 @@ ul {
   border: none;
   padding: 0;
   line-height: 0;
-}
+  cursor: pointer;
 
-.mobile-menu-open__icon {
-  fill: var(--primary-text-color);
+  &__icon {
+    fill: var(--primary-text-color);
+  }
 }
 
 .header__button {
+  display: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -84,7 +82,6 @@ ul {
   }
 
   .mobile-menu-open {
-    cursor: pointer;
     margin-right: 30px;
   }
 
@@ -105,11 +102,6 @@ ul {
 
   .header__icon {
     width: 65px;
-  }
-
-  .header__container {
-    padding-top: 17px;
-    padding-bottom: 17px;
   }
 
   .mobile-menu-open {
