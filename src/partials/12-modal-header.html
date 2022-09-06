@@ -1,0 +1,97 @@
+<div class="header-backdrop is-hidden" data-menu-modal-header>
+  <div class="header-modal__container">
+    <h2 class="header-modal__title">Buy now</h2>
+
+    <div class="header-modal__card-wrapper">
+
+      <ul class="header-modal__list">
+
+        <li class="header-modal__card">
+          <div class="header-modal__bg">
+            <img
+              class="header-modal__icon"
+              src="./images/header/mobile/cream.png"
+              alt="cream"
+              width="132"
+            />
+          </div>
+          <h3 class="header-modal__description">ice cream</h3>
+        </li>
+
+        <li class="header-modal__card">
+          <div class="header-modal__bg">
+            <img
+              class="header-modal__icon"
+              src="./images/header/mobile/coffee.png"
+              alt="coffee"
+              width="132"
+            />
+          </div>
+          <h3 class="header-modal__description">ice coffee</h3>
+        </li>
+
+        <li class="header-modal__card">
+          <div class="header-modal__bg">
+            <img
+              class="header-modal__icon"
+              src="./images/header/mobile/milkshake.png"
+              alt="coffee"
+              width="132"
+            />
+          </div>
+          <h3 class="header-modal__description">milkshake</h3>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <button class="header-modal__close mobile-menu-close" data-menu-close-modal-header>
+      <svg class="header-modal__close-icon" width="20" height="20">
+        <use href="./images/sprite/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="header-modal-form">
+      <label class="header-modal-form__field">
+     
+        <input
+          type="text"
+          class="header-modal-form__input"
+          name="user_name"
+          required
+          pattern="^[A-Za-zА-Яа-яІіЇї]+$"
+          minlength="2"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="header-modal-form__field">
+
+        <span class="header-modal-form__input-wrapper">
+          <input
+            type="tel"
+            class="header-modal-form__input"
+            name="user_phone"
+            required
+            pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+            title="xxx-xxx-xx-xx"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+
+      <label class="header-modal-form__field-text">
+        <textarea
+          class="header-modal-form__message"
+          name="user_message"
+          placeholder="Введіть текст"
+        ></textarea>
+      </label>
+
+      <button class="header-modal__button header__button header__button-mobile">
+Submit
+      </button>
+    </form>
+  </div>
+</div>
