@@ -51,63 +51,68 @@
       </div>
     </div>
 
-    <h3 class="filling-title">Ingredients</h3>
-    <div>
+    <div class="ingredients-item">
+      <h3 class="ingredients-title">Ingredients</h3>
       <div class="filling-title">
-        <p class="filling-suptitle"></p>
-        <p class="filling-suptitle"></p>
+        <p class="filling-text">Milk</p>
+        <p class="filling-text">100ml</p>
       </div>
       <div class="filling-title">
-        <p class="filling-suptitle"></p>
-        <p class="filling-suptitle"></p>
+        <p class="filling-text">Belgian chocolate</p>
+        <p class="filling-text">20g</p>
       </div>
       <div class="filling-title">
-        <p class="filling-suptitle"></p>
-        <p class="filling-suptitle"></p>
+        <p class="filling-text">Cream</p>
+        <p class="filling-text">150 ml</p>
       </div>
       <div class="filling-title">
-        <p class="filling-suptitle"></p>
-        <p class="filling-suptitle"></p>
+        <p class="filling-text">Cocoa powder</p>
+        <p class="filling-text">30g</p>
       </div>
       <div class="filling-title">
-        <p class="filling-suptitle"></p>
-        <p class="filling-suptitle"></p>
+        <p class="filling-text">Sugar</p>
+        <p class="filling-text">40g</p>
       </div>
       <div class="filling-title">
-        <p class="filling-suptitle"></p>
-        <p class="filling-suptitle"></p>
+        <p class="filling-text">Vanilla sugar</p>
+        <p class="filling-text">10g</p>
       </div>
     </div>
+
     <form class="filling-contacts">
-      <label class="filling-contacts-field"
-        ><span class="filling-contacts-field-wrapper"
+      <label class="filling-contacts__label"
+        ><span class="filling-contacts__wrapper"
           ><input
             type="text"
             name="user_name"
-            class="modal-form-input"
+            class="modal-filling-input"
             required
             pattern="[a-zA-Zа-яА-Я]+"
-            minlength="2" /></span
+            minlength="2"
+            placeholder="Name" /></span
       ></label>
-      <label class="filling-contacts-field"
-        ><span class="filling-contacts-field-wrapper"
+      <label class="filling-contacts__label"
+        ><span class="filling-contacts__wrapper"
           ><input
             type="tel"
             name="user_phone"
-            class="modal-form-input"
+            class="modal-filling-input"
             required
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx" /></span
+            title="xxx-xxx-xx-xx"
+            placeholder="Phone" /></span
       ></label>
-      <label class="filling-contacts-field">
-        <textarea
-          name="user_message"
-          class="modal-form-message"
-          placeholder="Введите текст"
-        ></textarea>
+      <label class="filling-contacts__label">
+        <span class="filling-contacts__wrapper">
+          <textarea
+            name="user_comment"
+            class="modal-filling-comment"
+            placeholder="Comment"
+          ></textarea>
+        </span>
       </label>
 
-      <button type="submit" class="modal-form-submit">Отправить</button>
+      <button type="submit" class="modal-filling-btn">Submit</button>
     </form>
   </div>
 </div>
