@@ -1,0 +1,113 @@
+<div class="ingredients is-hidden" data-filling>
+  <div class="filling">
+    <button type="button" class="filling-close-btn" data-filling-close>
+      <svg class="filling-close-btn-icon" width="20" height="20">
+        <use href="./images/sprite/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="ingredients-photo-product">
+      <h2 class="ingredients-product">Chocolate icecream</h2>
+      <picture>
+        <source
+          srcset="./images/products/mobile/icecream.png 1x"
+          type="image/png"
+        />
+        <source
+          srcset="./images/products/mobile/icecream@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          class="ingredients-product-img"
+          src="./images/products/mobile/icecream.png"
+          alt="icecream"
+        />
+      </picture>
+    </div>
+
+    <div class="ingredients-wrap list">
+      <div class="ingredients-circle ingredients-circle_main">
+        <p class="ingredients-circle__title">kcal</p>
+        <div class="filling-inner">
+          <span class="filling-inner__grams">320</span>
+        </div>
+      </div>
+      <div class="ingredients-circle ingredients-circle_main">
+        <p class="ingredients-circle__title">Prote...</p>
+        <div class="filling-inner">
+          <span class="filling-inner__grams">4g</span>
+        </div>
+      </div>
+      <div class="ingredients-circle ingredients-circle_main">
+        <p class="ingredients-circle__title">Fats</p>
+        <div class="filling-inner">
+          <span class="filling-inner__grams">8,2g</span>
+        </div>
+      </div>
+      <div class="ingredients-circle ingredients-circle_main">
+        <p class="ingredients-circle__title">Carbs</p>
+        <div class="filling-inner">
+          <span class="filling-inner__grams">40,4g</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="filling-title">Ingredients</h3>
+    <div>
+      <div class="filling-title">
+        <p class="filling-suptitle"></p>
+        <p class="filling-suptitle"></p>
+      </div>
+      <div class="filling-title">
+        <p class="filling-suptitle"></p>
+        <p class="filling-suptitle"></p>
+      </div>
+      <div class="filling-title">
+        <p class="filling-suptitle"></p>
+        <p class="filling-suptitle"></p>
+      </div>
+      <div class="filling-title">
+        <p class="filling-suptitle"></p>
+        <p class="filling-suptitle"></p>
+      </div>
+      <div class="filling-title">
+        <p class="filling-suptitle"></p>
+        <p class="filling-suptitle"></p>
+      </div>
+      <div class="filling-title">
+        <p class="filling-suptitle"></p>
+        <p class="filling-suptitle"></p>
+      </div>
+    </div>
+    <form class="filling-contacts">
+      <label class="filling-contacts-field"
+        ><span class="filling-contacts-field-wrapper"
+          ><input
+            type="text"
+            name="user_name"
+            class="modal-form-input"
+            required
+            pattern="[a-zA-Zа-яА-Я]+"
+            minlength="2" /></span
+      ></label>
+      <label class="filling-contacts-field"
+        ><span class="filling-contacts-field-wrapper"
+          ><input
+            type="tel"
+            name="user_phone"
+            class="modal-form-input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx" /></span
+      ></label>
+      <label class="filling-contacts-field">
+        <textarea
+          name="user_message"
+          class="modal-form-message"
+          placeholder="Введите текст"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="modal-form-submit">Отправить</button>
+    </form>
+  </div>
+</div>

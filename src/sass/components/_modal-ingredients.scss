@@ -1,0 +1,115 @@
+.ingredients {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: opacity var(--timing-function), var(--timing-duration),
+    visibility var(--timing-function), var(--timing-duration);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.filling {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 100%;
+  background-color: var(--primary-text-color);
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px 20px;
+}
+
+.filling-close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 28px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.filling-close-btn-icon {
+  transition: fill var(--timing-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fil: var (--subtitle-color);
+  }
+}
+
+.ingredients-product {
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-family: 'Seymour One';
+  @include font(20px, 400, 28px);
+  color: var(--subtitle-color);
+}
+
+.ingredients-product-img {
+  margin: auto;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.ingredients-wrap {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+
+.ingredients-circle {
+  position: relative;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  @include font(10px, 400, 12px);
+  color: var(--subtitle-color);
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  & > .ingredients-circle__title {
+    margin-top: 52px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    @include font(10px, 400, 12px);
+    color: var(--subtitle-color);
+  }
+}
+
+.filling-inner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #9cbe8f;
+  border-radius: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  & > .filling-inner__grams {
+    position: absolute;
+    @include font(10px, 500, 28px);
+    color: var(--subtitle-color);
+    margin-bottom: 28px;
+  }
+}
