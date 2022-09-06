@@ -2,10 +2,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   height: 100%;
-  background-color: var(--background-button-disable);
+  background-color: transparent;
   transition: opacity var(--timing-function), var(--timing-duration),
     visibility var(--timing-function), var(--timing-duration);
   &.is-hidden {
@@ -21,15 +21,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 280px;
-  height: 990px;
+  height: 100%;
   background-color: var(--primary-text-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
   padding: 28px 20px;
-  margin: 0 auto;
 }
 
 .filling-close-btn {
@@ -43,6 +42,10 @@
   background-color: transparent;
   padding: 0;
   line-height: 0;
+  // transition: background-color var(--timing-duration) var(--timing-function);
+}
+
+.filling-close-btn-icon {
   transition: fill var(--timing-duration) var(--timing-function);
 
   &:hover,
@@ -66,14 +69,14 @@
   padding: 0;
 }
 
-.ingredients-grams {
+.ingredients-wrap {
   display: flex;
   justify-content: space-between;
   display: flex;
   gap: 10px;
 }
 
-.ingredients-box {
+.ingredients-circle {
   position: relative;
   width: 53px;
   height: 72px;
@@ -81,35 +84,36 @@
   border-radius: 40px;
   @include font(10px, 400, 12px);
   color: var(--subtitle-color);
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  & > .ingredients-circle__title {
+    margin-top: 52px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    @include font(10px, 400, 12px);
+    color: var(--subtitle-color);
+  }
 }
 
-.ingredients-box__title {
-  margin-top: 52px;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-  @include font(10px, 400, 12px);
-  color: var(--subtitle-color);
-}
-
-.filling {
+.filling-inner {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
   width: 43px;
   height: 43px;
-  left: 25px;
-  top: 269px;
-
-  background: #9cbe8f;
-  border: 2px solid #9cbe8f;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-}
-
-.ingredients-box > .ingredients-box__gram {
-  @include font(10px, 500, 28px);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--subtitle-color);
-  border: 2px solid #9cbe8f;
   border-radius: 50%;
+  background-color: #9cbe8f;
+  border-radius: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  & > .filling-inner__grams {
+    position: absolute;
+    @include font(10px, 500, 28px);
+    color: var(--subtitle-color);
+    margin-bottom: 28px;
+  }
 }
