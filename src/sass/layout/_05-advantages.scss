@@ -12,6 +12,15 @@
   }
 }
 
+// Desktop
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 53px;
+    padding-bottom: 180px;
+  }
+}
+
 .advantages-list__item::before {
   display: inline-block;
   content: '';
