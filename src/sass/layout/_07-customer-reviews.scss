@@ -1,5 +1,5 @@
 .customer-reviews {
-  padding-top: 452px;
+  padding-top: 218px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -10,7 +10,7 @@
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/background/mobile/background-galery.jpg);
-    padding-top: 205px;
+    padding-top: 180px;
     padding-bottom: 420px;
   }
 
@@ -26,7 +26,7 @@
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/background/desktop/background-gallery.jpg);
-
+padding-top: 450px;
     padding-bottom: 207px;
   }
 }
