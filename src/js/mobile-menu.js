@@ -10,17 +10,17 @@
       refs.menu.classList.toggle('is-open');
     }
   })();
-
-
   (() => {
     const refs = {
-      openMenuBtn: document.querySelector('[data-menu-open-modal-header]'),
-      closeMenuBtn: document.querySelector('[data-menu-close-modal-header]'),
-      menu: document.querySelector('[data-menu-modal-header]'),
+      openModalhtn: document.querySelector('[data-Modalh1-open]'),
+      closeModalhtn: document.querySelector('[data-Modalh-close]'),
+      Modalh: document.querySelector('[data-Modalh]'),
+      body: document.querySelector('.body'),
     };
-    refs.openMenuBtn.addEventListener('click', toggleModal);
-    refs.closeMenuBtn.addEventListener('click', toggleModal);
-    function toggleModal() {
-      refs.menu.classList.toggle('is-open');
+    refs.openModalhtn.addEventListener('click', toggleModalh);
+    refs.closeModalhtn.addEventListener('click', toggleModalh);
+    function toggleModalh() {
+      refs.Modalh.classList.toggle('is-hidden');
+      refs.body.classList.toggle('no-scroll');
     }
   })();
