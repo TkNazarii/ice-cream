@@ -1,5 +1,5 @@
 .ingredients {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -21,7 +21,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 280px;
-  height: 100%;
+  height: 990px;
   background-color: var(--primary-text-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -61,7 +61,7 @@
 
 .ingredients-product-img {
   margin: auto;
-  margin-top: 22px;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -80,7 +80,7 @@
   border-radius: 40px;
   @include font(10px, 400, 12px);
   color: var(--subtitle-color);
-  margin-top: 24px;
+  // margin-top: 24px;
   margin-bottom: 40px;
 
   & > .ingredients-circle__title {
@@ -98,7 +98,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
+  top: -0.5px;
+  left: 2px;
   width: 43px;
   height: 43px;
   border-radius: 50%;
@@ -112,4 +113,71 @@
     color: var(--subtitle-color);
     margin-bottom: 28px;
   }
+}
+
+.ingredients-item {
+  margin-bottom: 37px;
+}
+
+.ingredients-title {
+  @include font(20px, 500, 28px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--subtitle-color);
+  margin-bottom: 24px;
+}
+
+.filling-title {
+  @include font(14px, 400, 25px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--subtitle-color);
+  margin-bottom: 11px;
+}
+
+.filling-contacts__label {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.modal-filling-input {
+  width: 100%;
+  height: 42px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--background-green-color);
+  border-radius: 10px;
+  padding: 8px 12px;
+  @include font(14px, 400, 20px);
+  color: var(--subtitle-color);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.modal-filling-comment {
+  width: 100%;
+  height: 84px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--background-green-color);
+  border-radius: 10px;
+  padding: 11px;
+  @include font(14px, 400, 20px);
+  color: var(--subtitle-color);
+  display: block;
+  margin-bottom: 24px;
+}
+
+.modal-filling-btn {
+  background-color: var(--hero-link-hero-color);
+  border: 2px solid var(--hero-link-hero-color);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 43px;
+  @include font(14px, 600, 17px);
+  display: block;
 }
