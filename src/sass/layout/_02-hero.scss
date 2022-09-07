@@ -1,3 +1,6 @@
+
+
+
 .hero__button {
   border: 2px solid var(--hero-link-hero-color);
   @include font(8px, 400, 9px);
@@ -78,6 +81,7 @@
   width: 100%;
   transform: translateY(16.5%);
   bottom: 0;
+  right: 0;
 }
 
 .hero__picture-two {
