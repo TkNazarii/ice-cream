@@ -1,58 +1,60 @@
-<div class="modal-franchise is-hidden" data-modal>
-  <button type="button" class="btn-close" data-modal-close>
-    <svg width="16" height="16">
-      <use href="./images/sprite/sprite.svg#icon-close"></use>
-    </svg>
-  </button>
-  <p class="modal-franchise__introduction">
-    Thank you for your interest in owning an Ice Cream shop
-  </p>
-  <p class="modal-franchise__text">
-    Due to the overwhelming volume of franchise requests we are not accepting
-    new franchisee applications at this time. Once the application process
-    resumes, we will contact you for further information. Please fill out the
-    contact information below and we will reach out for additional information.
-    We appreciate your patience.
-  </p>
-  <form class="modal-franchise__form">
-    <label class="modal-franchise__label">
-      <input
-        name="user_name"
-        type="text"
-        class="modal-franchise__input"
-        required
-        pattern="^[A-Za-z]+$"
-        placeholder="Name"
-      />
-    </label>
+<div class="modal-franchise__wrapper is-hidden" data-modal>
+  <div class="modal-franchise is-hidden">
+    <button type="button" class="btn-close" data-modal-close>
+      <svg width="16" height="16">
+        <use href="./images/sprite/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-franchise__introduction">
+      Thank you for your interest in owning an Ice Cream shop
+    </p>
+    <p class="modal-franchise__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal-franchise__form">
+      <label class="modal-franchise__label">
+        <input
+          name="user_name"
+          type="text"
+          class="modal-franchise__input"
+          required
+          pattern="^[A-Za-z]+$"
+          placeholder="Name"
+        />
+      </label>
 
-    <label class="modal-franchise__label">
-      <input
-        type="tel"
-        name="user_phone"
-        class="modal-franchise__input"
-        required
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="XXX-XXX-XX-XX"
-        placeholder="Phone"
-      />
-    </label>
-    <label class="modal-franchise__label">
-      <input
-        type="email"
-        name="user_email"
-        class="modal-franchise__input"
-        required
-        placeholder="Email"
-      />
-    </label>
-    <label>
-      <textarea
-        class="modal-franchise__comment"
-        name="user_comment"
-        placeholder="Comment"
-      ></textarea>
-    </label>
-  </form>
-  <button type="submit" class="modal-franchise__btn">Submit</button>
+      <label class="modal-franchise__label">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-franchise__input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="XXX-XXX-XX-XX"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="modal-franchise__label">
+        <input
+          type="email"
+          name="user_email"
+          class="modal-franchise__input"
+          required
+          placeholder="Email"
+        />
+      </label>
+      <label>
+        <textarea
+          class="modal-franchise__comment"
+          name="user_comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </form>
+    <button type="submit" class="modal-franchise__btn">Submit</button>
+  </div>
 </div>

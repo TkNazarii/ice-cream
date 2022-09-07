@@ -1,6 +1,5 @@
 .modal-franchise {
-  position: fixed;
-  z-index: 1000;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -10,6 +9,9 @@
   border: 2px solid var(--hero-link-hero-color);
   border-radius: 10px;
   padding: 28px;
+}
+.modal-franchise__wrapper {
+  position: relative;
 }
 .btn-close {
   position: absolute;
@@ -73,7 +75,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.modal-franchise.is-hidden {
+.modal-franchise__wrapper.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
