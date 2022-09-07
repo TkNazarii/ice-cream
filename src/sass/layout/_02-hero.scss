@@ -8,11 +8,11 @@
   padding: 7px 12px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover,
-  &:focus {
-    border-color: var(--background-button-hover);
-  }
+.hero__button:hover,
+.hero__button:focus {
+  border-color: var(--background-button-hover);
 }
 
 .hero__link {
@@ -26,11 +26,11 @@
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover,
-  &:focus {
-    color: var(--background-button-hover);
-  }
+.hero__link:hover,
+.hero__link:focus {
+  color: var(--background-button-hover);
 }
 
 @media screen and (max-width: 767px) {
@@ -66,6 +66,7 @@
 }
 
 .hero__picture-one {
+  pointer-events: none;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -73,6 +74,7 @@
 }
 
 .hero__picture-two {
+  pointer-events: none;
   position: absolute;
   width: 100%;
   transform: translateY(16.5%);
@@ -163,17 +165,15 @@
     transform: translateY(12.5%);
   }
 
-.hero__icon {
-  transform: scale(1);
+  .hero__icon {
+    transform: scale(1);
 
     .hero__description-link:hover &,
-  .hero__description-link:focus & {
-    transform: scale(1.1);
-    transform-origin: center left;
+    .hero__description-link:focus & {
+      transform: scale(1.1);
+      transform-origin: center left;
+    }
   }
-}
-
-
 }
 
 .hero__animation {
@@ -196,7 +196,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   .hero__how-first {
     @include font(46px, 900, 56px);
   }

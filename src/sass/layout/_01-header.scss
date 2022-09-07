@@ -41,7 +41,8 @@ ul {
   }
 }
 
-.header__button {
+@media screen and (max-width: 767px) {
+  .header__button {
   display: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -50,6 +51,9 @@ ul {
     background-color: var(--background-button-hover);
   }
 }
+}
+
+
 
 @media screen and (min-width: 768px) {
   .header__container {
