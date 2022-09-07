@@ -8,11 +8,11 @@
   padding: 7px 12px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero__button:hover,
-.hero__button:focus {
-  border-color: var(--background-button-hover);
+  &:hover,
+  &:focus {
+    border-color: var(--background-button-hover);
+  }
 }
 
 .hero__link {
@@ -26,11 +26,11 @@
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero__link:hover,
-.hero__link:focus {
-  color: var(--background-button-hover);
+  &:hover,
+  &:focus {
+    color: var(--background-button-hover);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -62,7 +62,6 @@
 
 .hero__container {
   position: relative;
-  // overflow: hidden;
 }
 
 .hero__picture-one {
