@@ -41,13 +41,15 @@ ul {
   }
 }
 
-.header__button {
-  display: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    background-color: var(--background-button-hover);
+    &:hover,
+    &:focus {
+      background-color: var(--background-button-hover);
+    }
   }
 }
 
@@ -232,4 +234,3 @@ ul {
 .nav__link_current {
   color: var(--secondary-title-color);
 }
-
