@@ -232,7 +232,7 @@
 .icon-arrow-right {
   height: 20px;
   width: 40px;
-  border: transparent;
+  border-color: 2px solid var(--subtitle-color);
   cursor: pointer;
   transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1),
     width var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
