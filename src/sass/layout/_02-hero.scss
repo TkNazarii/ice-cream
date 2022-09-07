@@ -62,10 +62,10 @@
 
 .hero__container {
   position: relative;
-  overflow: hidden;
 }
 
 .hero__picture-one {
+  pointer-events: none;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -73,9 +73,10 @@
 }
 
 .hero__picture-two {
+  pointer-events: none;
   position: absolute;
   width: 100%;
-  transform: translateY(17%);
+  transform: translateY(16.5%);
   bottom: 0;
 }
 
@@ -158,12 +159,24 @@
   }
 
   .hero__picture-two {
-    max-width: 430px;
+    max-width: 400px;
     right: 30px;
+    transform: translateY(12.5%);
+  }
+
+  .hero__icon {
+    transform: scale(1);
+
+    .hero__description-link:hover &,
+    .hero__description-link:focus & {
+      transform: scale(1.1);
+      transform-origin: center left;
+    }
   }
 }
 
 .hero__animation {
+  pointer-events: none;
   width: 100%;
 
   animation-name: spin;
@@ -205,9 +218,9 @@
   }
 
   .hero__picture-two {
-    max-width: 600px;
-    right: 40px;
-    transform: translateY(13%);
+    max-width: 660px;
+    right: 0px;
+    transform: translateY(12.6%);
   }
 
   .hero__description {
