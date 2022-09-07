@@ -1,5 +1,3 @@
-
-
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
@@ -76,6 +74,7 @@
     line-height: 1.22;
     display: flex;
     flex-direction: column;
+    max-width: 270px;
   }
 
   .footer__text-part-two {
@@ -187,7 +186,6 @@
     fill: var(--primary-text-color);
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .footer__social-icon {
