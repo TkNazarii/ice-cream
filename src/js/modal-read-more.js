@@ -1,14 +1,14 @@
 (() => {
   const refs = {
-    openFillingBtn: document.querySelector('[data-filling4-open]'),
-    closeFillingBtn: document.querySelector('[data-filling4-close]'),
-    filling: document.querySelector('[data-filling]'),
+    openReadingBtn: document.querySelector('[data-reading-open]'),
+    closeReadingBtn: document.querySelector('[data-reading-close]'),
+    reading: document.querySelector('[data-reading]'),
     body: document.querySelector('.body'),
   };
-  refs.openFillingBtn.addEventListener('click', toggleFilling);
-  refs.closeFillingBtn.addEventListener('click', toggleFilling);
-  function toggleFilling() {
-    refs.filling.classList.toggle('is-hidden');
+  refs.openReadingBtn.addEventListener('click', toggleReading);
+  refs.closeReadingBtn.addEventListener('click', toggleReading);
+  function toggleReading() {
+    refs.reading.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
 })();
